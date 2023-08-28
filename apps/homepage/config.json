@@ -1,0 +1,16 @@
+{
+  "name": "Homepage",
+  "available": true,
+  "port": 5757,
+  "exposable": true,
+  "id": "homepage",
+  "description": "A modern (fully static, fast), secure (fully proxied), highly customizable application dashboard with integrations for more than 25 services and translations for over 15 languages. Easily configured via YAML files (or discovery via docker labels).",
+  "tipi_version": 1,
+  "version": "0.6.29",
+  "categories": ["utilities"],
+  "short_desc": "A modern, secure, highly customizable application dashboard",
+  "author": "Ben Phelps",
+  "source": "https://github.com/benphelps/homepage",
+  "website": "https://gethomepage.dev/en/installation/",
+  "form_fields": []
+}

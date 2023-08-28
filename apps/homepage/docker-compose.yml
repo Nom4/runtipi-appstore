@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  homepage:
+    container_name: homepage
+    image: ghcr.io/benphelps/homepage:latest
+    environment:
+      - TZ=Europe/Zurich
+    volumes:
+      - ${APP_DATA_DIR}/_data:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock:ro # (optional) For docker integrations
+    ports:
+      - ${APP_PORT}:3000
+    restart: unless-stopped
+    networks:
+      - tipi_main_network
